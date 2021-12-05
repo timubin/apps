@@ -1,19 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 #title {
   text-align: center;
   background-color: #476;
   padding: 5px;
   max-width: 854px;
   color: white;
+  border: 1px solid black;
+}
+
+.main {
+  display: inline-block;
 }
 .myBox {
   color: white;
   width: 200px;
   height: 100px;
   border: 2px solid black;
-  background-color: royalblue;
+  text-align: center;
   cursor: pointer;
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 30px;
   font-family: roboto;
+  float: left;
+}
+@media only screen and (max-width: 428px) {
+  #title {
+    background-color: rebeccapurple;
+    font-size: 20px;
+  }
+  .main .myBox {
+    width: 180px;
+    height: 80px;
+    margin: 2px 2px;
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #title {
+    width: 100%;
+    font-size: 18px;
+  }
+  .main .myBox {
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+  }
 }
